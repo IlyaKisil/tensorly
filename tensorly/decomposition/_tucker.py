@@ -13,7 +13,7 @@ import warnings
 
 def partial_tucker(tensor, modes, rank=None, n_iter_max=100, init='svd', tol=10e-5,
                    random_state=None, verbose=False, ranks=None):
-    """Partial tucker decomposition via Higher Order Orthogonal Iteration (HOI)
+    """Partial tucker decomposition via Higher Order Orthogonal Iteration (HOOI)
 
         Decomposes `tensor` into a Tucker decomposition exclusively along the provided modes.
 
@@ -95,7 +95,7 @@ def partial_tucker(tensor, modes, rank=None, n_iter_max=100, init='svd', tol=10e
 
 def tucker(tensor, rank=None, ranks=None, n_iter_max=100, init='svd', tol=10e-5,
            random_state=None, verbose=False):
-    """Tucker decomposition via Higher Order Orthogonal Iteration (HOI)
+    """Tucker decomposition via Higher Order Orthogonal Iteration (HOOI)
 
         Decomposes `tensor` into a Tucker decomposition:
         ``tensor = [| core; factors[0], ...factors[-1] |]`` [1]_
